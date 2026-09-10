@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 3 - Encuesta</title>
+  <link rel="stylesheet" href="ejercicio3.css">
+</head>
+<body>
+  <div class="card">
+    <h2>Encuesta de Satisfacción</h2>
+    <form action="#" method="post">
+      <fieldset>
+        <legend>¿Recomendarías nuestro servicio?</legend>
+        <label><input type="radio" name="recomienda" value="si" checked> Sí, totalmente</label>
+        <label><input type="radio" name="recomienda" value="talvez"> Tal vez</label>
+        <label><input type="radio" name="recomienda" value="no"> No por ahora</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>¿Qué aspectos valoras más?</legend>
+        <label><input type="checkbox" name="aspecto" value="rapidez"> Rapidez en la atención</label>
+        <label><input type="checkbox" name="aspecto" value="calidad"> Calidad técnica</label>
+        <label><input type="checkbox" name="aspecto" value="precio"> Relación costo/beneficio</label>
+      </fieldset>
+
+      <div class="field">
+        <label for="satisfaccion">Nivel general de satisfacción (1 al 10)</label>
+        <div class="range-box">
+          <span>1</span>
+          <input type="range" id="satisfaccion" name="satisfaccion" min="1" max="10" value="8">
+          <span>10</span>
+        </div>
+      </div>
+
+      <button type="submit" class="btn">Enviar Respuestas</button>
+    </form>
+  </div>
+</body>
+</html>

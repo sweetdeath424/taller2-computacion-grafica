@@ -1,0 +1,14 @@
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: system-ui, sans-serif; }
+body { background: #f1f5f9; display: flex; justify-content: center; align-items: center; min-height: 100vh; padding: 20px; }
+.card { background: #fff; width: 100%; max-width: 480px; padding: 30px; border-radius: 12px; box-shadow: 0 4px 18px rgba(0,0,0,0.05); }
+h2 { margin-bottom: 20px; color: #0f172a; font-size: 1.4rem; }
+form { display: grid; gap: 18px; }
+fieldset { border: 1px solid #cbd5e1; padding: 14px; border-radius: 8px; display: grid; gap: 8px; }
+legend { font-size: 0.9rem; font-weight: 600; color: #1e293b; padding: 0 6px; }
+label { font-size: 0.9rem; color: #334155; display: flex; align-items: center; gap: 8px; cursor: pointer; }
+.field { display: grid; gap: 8px; }
+.field > label { font-weight: 600; }
+.range-box { display: flex; align-items: center; gap: 10px; }
+.range-box input { flex: 1; accent-color: #059669; }
+.btn { background: #059669; color: #fff; border: none; padding: 12px; border-radius: 6px; font-weight: 600; cursor: pointer; }
+.btn:hover { background: #047857; }

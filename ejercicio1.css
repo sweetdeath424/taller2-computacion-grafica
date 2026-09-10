@@ -1,0 +1,14 @@
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: system-ui, sans-serif; }
+body { background: #f0f4f8; display: flex; justify-content: center; align-items: center; min-height: 100vh; padding: 20px; }
+.card { background: #fff; width: 100%; max-width: 420px; padding: 30px; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.06); }
+h2 { margin-bottom: 20px; color: #1e293b; font-size: 1.5rem; }
+form { display: grid; gap: 16px; }
+.field { display: grid; gap: 6px; }
+label { font-size: 0.9rem; font-weight: 600; color: #334155; }
+input[type="text"], input[type="email"], input[type="password"] {
+  padding: 10px 12px; border: 1px solid #cbd5e1; border-radius: 6px; font-size: 0.95rem; outline: none;
+}
+input:focus { border-color: #2563eb; box-shadow: 0 0 0 3px rgba(37,99,235,0.15); }
+.checkbox-label { display: flex; align-items: center; gap: 8px; font-size: 0.85rem; color: #475569; cursor: pointer; }
+.btn { background: #2563eb; color: #fff; border: none; padding: 12px; border-radius: 6px; font-weight: 600; cursor: pointer; }
+.btn:hover { background: #1d4ed8; }

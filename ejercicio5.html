@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 5 - Ticket de Soporte</title>
+  <link rel="stylesheet" href="ejercicio5.css">
+</head>
+<body>
+  <div class="card">
+    <h2>Reportar Incidencia</h2>
+    <form action="#" method="post">
+      <div class="field">
+        <label for="sop-asunto">Asunto del problema</label>
+        <input type="text" id="sop-asunto" name="asunto" placeholder="Breve título de la falla" required>
+      </div>
+      <div class="field">
+        <label for="sop-prioridad">Prioridad</label>
+        <select id="sop-prioridad" name="prioridad" required>
+          <option value="" disabled selected>Seleccione el nivel de urgencia</option>
+          <option value="baja">Baja (Consulta general)</option>
+          <option value="media">Media (Afecta parcialmente)</option>
+          <option value="alta">Alta (Bloqueo crítico)</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="sop-detalle">Descripción detallada</label>
+        <textarea id="sop-detalle" name="detalle" rows="4" placeholder="Explique qué ocurrió y cómo reproducirlo..." required></textarea>
+      </div>
+      <div class="field">
+        <label for="sop-evidencia">Captura o archivo de evidencia</label>
+        <input type="file" id="sop-evidencia" name="evidencia" accept="image/*,.pdf">
+      </div>
+      <button type="submit" class="btn">Crear Ticket</button>
+    </form>
+  </div>
+</body>
+</html>

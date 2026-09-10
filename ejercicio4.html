@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 4 - Solicitud Laboral</title>
+  <link rel="stylesheet" href="ejercicio4.css">
+</head>
+<body>
+  <div class="card">
+    <h2>Postulación a Vacante</h2>
+    <form action="#" method="post">
+      <div class="field">
+        <label for="post-nombre">Nombre y Apellidos</label>
+        <input type="text" id="post-nombre" name="nombre" required>
+      </div>
+      <div class="field">
+        <label for="post-cargo">Posición a la que aplica</label>
+        <input type="text" id="post-cargo" name="cargo" placeholder="Desarrollador Web" required>
+      </div>
+      <div class="field">
+        <label for="post-cv">Adjuntar Hoja de Vida / CV</label>
+        <input type="file" id="post-cv" name="cv" accept=".pdf,.doc,.docx" required>
+        <small>Solo archivos en formato PDF o Word (máx 5MB)</small>
+      </div>
+      <div class="field">
+        <label for="post-link">Portafolio o perfil de LinkedIn</label>
+        <input type="url" id="post-link" name="portafolio" placeholder="https://linkedin.com/in/perfil">
+      </div>
+      <button type="submit" class="btn">Enviar Postulación</button>
+    </form>
+  </div>
+</body>
+</html>
