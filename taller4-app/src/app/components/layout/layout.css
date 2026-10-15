@@ -1,0 +1,19 @@
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  border: 3px solid #0284c7;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: #ffffff;
+}
+.cuerpo-medio {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+}
+@media (max-width: 768px) {
+  .cuerpo-medio { grid-template-columns: 1fr; }
+}

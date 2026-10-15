@@ -1,0 +1,12 @@
+.footer {
+  background-color: #1e293b;
+  border: 2px solid #0f172a;
+  padding: 16px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  border-radius: 8px;
+}
+@media (max-width: 768px) {
+  .footer { grid-template-columns: 1fr; }
+}
